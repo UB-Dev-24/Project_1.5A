@@ -1,42 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gallery</title>
-  <link rel="stylesheet" href="styles.css"/>
-  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
 </head>
+
 <body>
 
-<nav class="navbar glass">
-  <img src="logo.png" class="logo-img">
-  <ul class="nav-links">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="features.html">Features</a></li>
-    <li><a class="active" href="gallery.html">Gallery</a></li>
-    <li><a href="pricing.html">Pricing</a></li>
-    <li><a href="testimonials.html">Testimonials</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-  <div class="menu-btn" onclick="toggleMenu()">☰</div>
-</nav>
-
-<header class="hero">
-  <h1 class="fade-up">Gallery</h1>
-  <p class="fade-up delay-1">A visual experience you'll love.</p>
+<header>
+  <nav>
+    <div class="logo"><img src="logo.svg" alt="Logo"></div>
+    <div class="menu-btn" onclick="toggleMenu()">☰</div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="features.html">Features</a>
+      <a href="gallery.html" class="active">Gallery</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="testimonials.html">Testimonials</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
 </header>
 
-<section class="gallery-grid">
-  <img class="gallery-img fade-up" src="https://picsum.photos/500/300?1">
-  <img class="gallery-img fade-up delay-1" src="https://picsum.photos/500/300?2">
-  <img class="gallery-img fade-up delay-2" src="https://picsum.photos/500/300?3">
-  <img class="gallery-img fade-up delay-3" src="https://picsum.photos/500/300?4">
+<section class="hero fade-up">
+  <h1>Gallery</h1>
+  <p>Visual showcase with improved spacing & layout.</p>
 </section>
 
-<footer class="footer glass">
-  <p>© 2025 Modern Website</p>
+<section>
+  <h2 class="section-title">Our Images</h2>
+
+  <div class="gallery-grid fade-up">
+    <img src="https://picsum.photos/400/300?1" alt="">
+    <img src="https://picsum.photos/400/300?2" alt="">
+    <img src="https://picsum.photos/400/300?3" alt="">
+    <img src="https://picsum.photos/400/300?4" alt="">
+    <img src="https://picsum.photos/400/300?5" alt="">
+    <img src="https://picsum.photos/400/300?6" alt="">
+  </div>
+</section>
+
+<footer>
+  © 2025 Your Website — All Rights Reserved
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
