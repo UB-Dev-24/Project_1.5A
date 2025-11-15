@@ -1,41 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Features</title>
-  <link rel="stylesheet" href="styles.css" />
-  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
 </head>
+
 <body>
 
-<nav class="navbar glass">
-  <img src="logo.png" class="logo-img">
-  <ul class="nav-links">
-    <li><a href="index.html">Home</a></li>
-    <li><a class="active" href="features.html">Features</a></li>
-    <li><a href="gallery.html">Gallery</a></li>
-    <li><a href="pricing.html">Pricing</a></li>
-    <li><a href="testimonials.html">Testimonials</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-  <div class="menu-btn" onclick="toggleMenu()">☰</div>
-</nav>
-
-<header class="hero">
-  <h1 class="fade-up">Premium Features</h1>
-  <p class="fade-up delay-1">Designed to deliver excellence.</p>
+<header>
+  <nav>
+    <div class="logo"><img src="logo.svg" alt="Logo"></div>
+    <div class="menu-btn" onclick="toggleMenu()">☰</div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="features.html" class="active">Features</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="testimonials.html">Testimonials</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
 </header>
 
-<section class="section">
-  <div class="glass card fade-up">🔒 Secure Structure</div>
-  <div class="glass card fade-up delay-1">🧭 Smart Navigation</div>
-  <div class="glass card fade-up delay-2">🚀 Lightning Performance</div>
+<section class="hero fade-up">
+  <h1>Our Features</h1>
+  <p>Designed with precision & built for performance.</p>
 </section>
 
-<footer class="footer glass">
-  <p>© 2025 Modern Website</p>
+<section>
+  <h2 class="section-title">What We Offer</h2>
+
+  <div class="card-grid fade-up">
+    <div class="card">
+      <h3>Modern UI</h3>
+      <p>Crisp layout with smooth gradients and glassmorphism elements.</p>
+    </div>
+
+    <div class="card">
+      <h3>High Speed</h3>
+      <p>Optimized JS & CSS ensure blazing-fast load time.</p>
+    </div>
+
+    <div class="card">
+      <h3>Perfect Layout</h3>
+      <p>Fully fluid structure with improved spacing and readability.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2025 Your Website — All Rights Reserved
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
