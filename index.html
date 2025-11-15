@@ -3,54 +3,66 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home - Modern Experience</title>
-
-  <!-- SEO -->
-  <meta name="description" content="A premium modern multi-page website with glassmorphism, gradients, animations, and responsive design." />
-  <meta property="og:title" content="Modern Multi-Page Website" />
-  <meta property="og:description" content="Beautiful gradient UI, animations, gallery, pricing, and more." />
-  <meta property="og:image" content="logo.png" />
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/x-icon" href="favicon.ico" />
-
+  <title>Modern Multi-Page Website</title>
   <link rel="stylesheet" href="styles.css" />
-  <script src="script.js" defer></script>
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
 </head>
+
 <body>
 
-<!-- NAVBAR -->
-<nav class="navbar glass">
-  <img src="logo.png" class="logo-img">
-  <ul class="nav-links">
-    <li><a class="active" href="index.html">Home</a></li>
-    <li><a href="features.html">Features</a></li>
-    <li><a href="gallery.html">Gallery</a></li>
-    <li><a href="pricing.html">Pricing</a></li>
-    <li><a href="testimonials.html">Testimonials</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-  <div class="menu-btn" onclick="toggleMenu()">☰</div>
-</nav>
+<!-- HEADER -->
+<header>
+  <nav>
+    <div class="logo">
+      <img src="logo.svg" alt="Logo">
+    </div>
 
-<!-- HERO -->
-<header class="hero">
-  <h1 class="fade-up">Experience the Future</h1>
-  <p class="fade-up delay-1">A clean, modern, animated website crafted just for you.</p>
-  <a href="features.html" class="btn fade-up delay-2">Explore Features</a>
+    <div class="menu-btn" onclick="toggleMenu()">☰</div>
+
+    <div class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="features.html">Features</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="testimonials.html">Testimonials</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
 </header>
 
-<!-- FEATURE CARDS -->
-<section class="section">
-  <div class="glass card fade-up">⚡ Fast & Optimized</div>
-  <div class="glass card fade-up delay-1">🎨 Beautiful UI</div>
-  <div class="glass card fade-up delay-2">📱 Fully Responsive</div>
+<!-- HERO -->
+<section class="hero fade-up">
+  <h1>Welcome to Your New Website</h1>
+  <p>Clean. Modern. Fully Responsive. Powered by your new dark-blue theme.</p>
+</section>
+
+<!-- FEATURES SECTION -->
+<section>
+  <h2 class="section-title">Why Choose Us</h2>
+
+  <div class="card-grid fade-up">
+    <div class="card">
+      <h3>Fast</h3>
+      <p>Your website loads quickly with optimized code and lazy-loaded images.</p>
+    </div>
+
+    <div class="card">
+      <h3>Responsive</h3>
+      <p>Fully fluid layout that adjusts perfectly to any screen size.</p>
+    </div>
+
+    <div class="card">
+      <h3>Beautiful</h3>
+      <p>White + Dark Blue gradient theme creates a modern, premium look.</p>
+    </div>
+  </div>
 </section>
 
 <!-- FOOTER -->
-<footer class="footer glass">
-  <p>© 2025 Modern Website. All rights reserved.</p>
+<footer>
+  © 2025 Your Website — All Rights Reserved
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
